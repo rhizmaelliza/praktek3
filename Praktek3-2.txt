@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Praktek 2 - Kalkulator Sederhana</title>
+    <h1>Kalkulator Sederhana</h1>
+</head>
+    <!-- menggunakan javascript -->
+    <script language="javaScript">
+        <!--
+        function tambah() { //class penjumlahan
+            var myform = document.form1;
+            var x = eval(myform.x.value);
+            var y = eval(myform.y.value);
+            var z = x + y;
+            myform.hasil.value = z;
+            //myform.x.value = "";
+            //myform.y.value = "";
+        }
+        function kurang() { //class pengurangan
+            var myform = document.form1;
+            var x = eval(myform.x.value);
+            var y = eval(myform.y.value);
+            var z = x - y;
+            myform.hasil.value = z;
+            //myform.x.value = "";
+            //myform.y.value = "";
+        }
+        function kali() { //class perkalian
+            var myform = document.form1;
+            var x = eval(myform.x.value);
+            var y = eval(myform.y.value);
+            var z = x * y;
+            myform.hasil.value = z;
+            //myform.x.value = "";
+            //myform.y.value = "";
+        }
+        function bagi() { //class pembagian
+            var myform = document.form1;
+            var x = eval(myform.x.value);
+            var y = eval(myform.y.value);
+            var z = x / y;
+            myform.hasil.value = z;
+            //myform.x.value = "";
+            //myform.y.value = "";
+        }
+        function resetform() { //form reset
+            document.form1.reset();
+        }
+        //-->
+    </script>
+    <body>
+        <div>
+            <form name="form1" action="#">
+                <p>Bil 1 <input type="text" name="x"></p>
+                <p>Bil 2 <input type="text" name="y"></p>
+                <p>Hasil <input type="text" name="hasil" disabled="true"></p>
+                <input type="button" value="+" onclick="tambah()">
+                <input type="button" value="-" onclick="kurang()">
+                <input type="button" value="x" onclick="kali()">
+                <input type="button" value="/" onclick="bagi()">
+                <input type="button" value="C" onclick="resetform()">
+        </div>
+    </body>
+</html>
